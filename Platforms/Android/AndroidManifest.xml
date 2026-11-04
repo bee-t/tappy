@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.tappy.sensorygame">
+
+	<!-- Minimal Google Play Store Families-Compliant Permissions -->
+	<!-- Required for tactile haptic pop feedback -->
+	<uses-permission android:name="android.permission.VIBRATE" />
+
+	<!-- Required to prevent screen dimming/locking during baby sensory sessions -->
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+	<!-- Multi-touch support (non-blocking on tablets/devices without full multitouch reporting) -->
+	<uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+
+	<application
+		android:allowBackup="false"
+		android:icon="@mipmap/appicon"
+		android:roundIcon="@mipmap/appicon_round"
+		android:supportsRtl="true"
+		android:label="Tappy"
+		android:hardwareAccelerated="true">
+	</application>
+
+</manifest>
